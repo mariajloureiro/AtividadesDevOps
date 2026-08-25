@@ -1,0 +1,299 @@
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+    grid-template-areas: 'btnMenu logo search search user btnExit';
+    margin: 1em 4em;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.btnMenu,
+.btnExit,
+.btnClose {
+    cursor: pointer;
+}
+
+.btnMenu:hover,
+.btnClose:hover {
+    color: #F2B134;
+}
+
+.btnMenu {
+    grid-area: btnMenu;
+}
+
+.logo {
+    width: 60%;
+    grid-area: logo;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    grid-area: search;
+    width: 35em;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    background-color: #EEEEEE;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: .3em .5em;
+    margin-right: .5em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    color: #474545;
+    font-size: 14px;
+    grid-area: user;
+}
+
+.btnExit {
+    background-color: #F2B134;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0em 3.5em;
+    grid-area: btnExit;
+    color: black;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: .5em;
+    height: 40px;
+}
+
+.navPages {
+    display: flex;
+    justify-content: center;
+    margin-right: 5em;
+    margin-top: .5em;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 2em;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0em;
+    transition: 1s;
+    transform: 1s;
+}
+
+.menuActive {
+    left: 0;
+    height: 80vh;
+    width: 200px;
+    position: fixed;
+    top: 0em
+}
+
+.menuItens {
+    width: 200px;
+    height: 100vh;
+    list-style: none;
+    background-color: #eeeeee;
+}
+
+.btnClose {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo1 {
+    width: 20%;
+    margin-top: .6em;
+}
+
+.image {
+    width: 10%;
+}
+
+
+@media (max-width:1440px) {
+    .logo {
+        width: 
+        20%;
+    }
+}
+
+@media (max-width:1024px) {
+    .logo {
+        width: 40%;
+    }
+    
+    .search {
+        width: 25em;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .navPages {
+        margin-right: 5em;
+        margin-top: .4em;
+    }
+}
+
+@media (max-width:768px) {
+    .nav {
+        grid-template-areas: 
+        'btnMenu logo user btnExit'
+        'search search search search';
+        margin: 1em 3em;
+        gap: 35px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+    
+    .search {
+        width: 30em;
+        margin: 0 auto;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .navPages {
+        margin-right: 3em;
+        margin-top: 2em;
+    }
+
+    .btnExit {
+        padding: 0em 2.4em;
+        font-weight: 600;
+        font-size: 14px;
+        height: 1.8em;
+        margin-top: .5em;
+    }
+
+    .btnMenu {
+        width: 25px;
+        
+    }
+
+    .user {
+        font-size: 13px;
+    }
+
+    .use{
+        width: 23px;
+    }
+ 
+}
+
+@media (max-width:425px) {
+    .logo {
+        width: 35%;
+        margin-left: 6.7em;
+    }
+
+    .nav {
+        grid-template-areas: 
+        'btnMenu user btnExit'
+        'logo logo logo'
+        'search search search';
+        margin: 1em 3em;
+        gap: 10px;
+    }
+
+    .search {
+        width: 20em;
+    }
+
+    .user {
+        margin-left: 10em;
+    }
+
+    .btnExit {
+        padding: 0em 3.4em 0 1.8em;
+        font-size: 13px;
+        width: 2em;
+        margin-top: 0.5em;
+    }
+
+    .navPages {
+        margin-left: 2em;
+    }
+}
+
+
+@media (max-width:375px) {
+   .nav{
+    margin: 1em 2em;
+   }
+
+   .navPages{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em ;
+}
+
+}
+@media (max-width:320px) {
+    .search {
+        width: 15em;
+    }
+
+    .nav {
+        grid-template-areas: 
+        'btnMenu btnExit '      
+        'logo  logo'
+        'search  search';
+        margin: 1em 2em;
+        gap: 6px;
+    }
+
+    .btnExit {
+        margin-left: 11em;
+        margin-top: .5em;
+        font-size: 12px;
+    }
+
+    .user, .search {
+        display: none;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-left: 5em;
+        margin-top: .2em;
+    }
+
+    .navPages{
+        display: flex;
+        flex-wrap: wrap;
+        width: 15em;
+        justify-content: space-around;
+        margin:  0 auto;
+    }
+
+    .link {
+        padding-bottom: .7em ;
+    }
+}

@@ -1,0 +1,24 @@
+.load {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    transform: scale(5);
+    margin: auto;
+
+  }
+  
+  .loader {
+    animation: is-rotating 1s infinite;
+    border: 2px solid #F2B134;
+    border-radius: 50%;
+    border-top-color: #4B2E83;
+    height: 14px;
+    width: 14px;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }

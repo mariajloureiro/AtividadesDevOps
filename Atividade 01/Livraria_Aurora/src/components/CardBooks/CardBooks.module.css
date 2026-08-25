@@ -1,0 +1,70 @@
+.card {
+    width: 20em;
+    height: 26em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+    
+}
+
+.image {
+    width: 10em;
+    height: 12em;
+    background-color: black;
+}
+
+.img {
+    width: 10em;
+    height: 12em;
+}
+
+.id{
+    text-align: center;
+    margin-top: .6em;
+    color:gray;
+    font-size: 14px;
+}
+
+.rating{
+    padding: .1em .8em;
+}
+
+.title{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.description{
+    font-size: 12px;
+    margin-top: .5em;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(75, 46, 131);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:425px) {
+}
+
+@media (max-width:375px) {
+    
+}
+
+@media (max-width:320px) {
+
+
+}

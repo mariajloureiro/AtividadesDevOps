@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    font-family: 'Inter', sans-serif;
+    height: 50vh;
+    width: 200px;
+    margin-top: 2em;
+}
+
+.link {
+    text-decoration: none;
+    padding: 1em 0;
+    color: black;
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.btn,
+.btnLivros {
+    border: none;
+    border-radius: 9px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    padding: .5em 1em;
+    margin-top: 1em;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn {
+    color: black;
+    background-color: #F2B134;
+}
+
+.btnLivros {
+    background-color: #4B2E83;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #4B2E83;
+    color: white;
+}
+
+.btnLivros:hover {
+    color: black;
+    background-color: #F2B134;
+}
+
+.link:hover {
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    color: #F2B134;
+}
+
+@media (max-width:768px) {
+    .menu {
+        width: 180px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+}
